@@ -13,8 +13,9 @@
      <link rel="stylesheet" type="text/css" href="styles/album.css">
      <link rel="stylesheet" type="text/css" href="styles/player_bar.css">
 </head>
-
-  <nav class="navbar"><!--navigation bar -->
+<body>
+  {{ 2 + 2 }}
+    <nav class="navbar"><!--navigation bar -->
           <a href="index.html" class="logo">
             <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo" class="logo">
           </a>
@@ -22,9 +23,11 @@
             <a href="collection.html" class="navbar-link">collection</a>
             </div>
     </nav>
-<body>
-  {{ 2 + 2 }}
+  <ui-view></ui-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+   <script src="/scripts/app.js"></script>
+ ...
     <script src="/scripts/app.js"></script>
 </body>
 </html>
