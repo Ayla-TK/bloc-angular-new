@@ -32,9 +32,16 @@
              { title: 'Wrong phone number', duration: '2:15' }
          ]
      };
+        Fixtures.getCollection = function(numberOfAlbums) {
+          array = [];
+          array.push(albums)
+          return array;
+        };
+       
         Fixtures.getAlbum = function() {
          return albumPicasso;
      };
+       
          return Fixtures;
      }
  
