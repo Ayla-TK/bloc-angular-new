@@ -16,26 +16,16 @@
        
         .state('album', {
              url: '/album',
+             controller: 'AlbumCtrl as album',
              templateUrl: '/templates/album.html'
          })
        
         .state('collection', {
-<<<<<<< HEAD
-              url: '/collection',
-              templateUrl: '/templates/collection.html'    
-        });
-=======
         url: '/collection',
         controller: 'CollectionCtrl as collection',
         templateUrl: '/templates/collection.html'
  });
        
-       
-       ;
-
->>>>>>> cp-5-ang-controllers
-     }
-   
 angular
   .module('blocJams',['ui.router'])
   .config(config);
