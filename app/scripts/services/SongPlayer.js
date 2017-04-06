@@ -38,7 +38,7 @@
     var playSong = function(song){
       currentBuzzObject.play();
       song.playing = true;
-    }
+    };
 
     var getSongIndex = function(song) {
      return currentAlbum.songs.indexOf(song);
@@ -83,7 +83,7 @@
     SongPlayer.previous = function() {
      var currentSongIndex = getSongIndex(SongPlayer.currentSong);
      currentSongIndex--;
- };     
+      
        
     if (currentSongIndex < 0) {
          currentBuzzObject.stop();
@@ -94,7 +94,8 @@
          playSong(song);
      }   
           return SongPlayer;
-     }
+     };
+  }
  
      angular
          .module('blocJams')
