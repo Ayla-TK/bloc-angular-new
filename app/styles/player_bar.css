@@ -142,8 +142,8 @@
 }
 .player-bar .volume {
   width: 25%;
-  text-align: center;
-  position: relative;
+  text-align: right;
+  
 }
 
 .player-bar .volume .icon {
