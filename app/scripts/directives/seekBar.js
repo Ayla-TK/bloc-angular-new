@@ -54,10 +54,11 @@
              scope.trackThumb = function() {
                $document.bind('mousemove.thumb', function(event) {
                  var percent = calculatePercent(seekBar, event);
-                 scope.$apply(function() {
+                 scope.value = percent * scope.max;
+                 /*scope.$apply(function() {
                     scope.value = percent * scope.max;
                     notifyOnChange(scope.value);
-                 });
+                 });*/
                });
 
               $document.bind('mouseup.thumb', function() {
@@ -68,7 +69,7 @@
            
               var notifyOnChange = function(newValue) {
                if (typeof scope.onChange === 'function') {
-                   scope.onChange({value: newValue});
+                   scope.onChange({something: newValue});
                }
             };
          }
